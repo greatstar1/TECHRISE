@@ -22,6 +22,7 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
+    --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -287,9 +288,6 @@
   .col-end-3 {
     grid-column-end: 3;
   }
-  .col-end-4 {
-    grid-column-end: 4;
-  }
   .col-end-auto {
     grid-column-end: auto;
   }
@@ -490,6 +488,9 @@
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
+  }
+  .h-\[8vh\] {
+    height: 8vh;
   }
   .h-screen {
     height: 100vh;
@@ -750,9 +751,6 @@
   }
   .grid-cols-\[1fr_4fr\] {
     grid-template-columns: 1fr 4fr;
-  }
-  .grid-cols-\[3fr_1fr\] {
-    grid-template-columns: 3fr 1fr;
   }
   .grid-cols-\[3fr_3fr\] {
     grid-template-columns: 3fr 3fr;
@@ -1363,14 +1361,14 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
-  .px-10 {
-    padding-inline: calc(var(--spacing) * 10);
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
   }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
+  .pr-2 {
+    padding-right: calc(var(--spacing) * 2);
   }
-  .pr-3 {
-    padding-right: calc(var(--spacing) * 3);
+  .pr-5 {
+    padding-right: calc(var(--spacing) * 5);
   }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
@@ -1438,6 +1436,10 @@
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -1968,6 +1970,11 @@
   .lg\:col-start-2 {
     @media (width >= 64rem) {
       grid-column-start: 2;
+    }
+  }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
     }
   }
 }

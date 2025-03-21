@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-
-
-
 .item {  
    @apply border-l-5 border-yellow-400 rounded-md bg-white pl-5 pt-5 pb-5 pr-5;
 }

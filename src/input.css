@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+
+
+
+.item {  
+   @apply border-l-5 border-yellow-400 rounded-md bg-white pl-5 pt-5 pb-5 pr-5;
+}
+
+.img{
+   @apply  flex items-center gap-5 pl-70;
+}
+
+.item2 {  
+   @apply  bg-white pl-5 pt-5 pb-5 pr-5 rounded-md;
+}
+
+.iconsDiv {
+   @apply flex items-center pt-8 pl-10;
+}
+
+.iconsDiv p{
+   @apply pl-3;
+}
+
+/*Header styling starts here*/
+.firstsection{
+   @apply flex pl-10 pt-0;
+}
+
+.iput.placeholder{
+@apply bg-yellow-200;
+}
+
+.text{
+   @apply bg-amber-300;
+}
+
+.lorem{
+   @apply text-sm mb-5;
+}
+
+.li2{
+   @apply mx-4
+}
+
+header button {
+   @apply bg-blue-500 text-white rounded-2xl lg:px-5 md:px-3 py-1 px-2 text-[12px] md:text-sm;
+}
+
+header button:hover {
+background-color: rgb(255, 183, 0);
+}
